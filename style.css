@@ -8,3 +8,216 @@
  Version:      1.0.0
  Text Domain:  twenty-sixteen-child
 */
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+body {
+	background-color: #081140;
+	color: white;
+	font-family: "Raleway", Montserrat, Arial;
+	font-size: 0.9em;
+}
+
+body:not(.custom-background-image).admin-bar:before {
+	content: unset;
+}
+
+body:not(.custom-background-image).admin-bar:after {
+	content: unset;
+}
+
+
+.site {
+	background-color: #081140;
+	margin: 0;
+}
+
+.site-main {
+    margin-bottom: 0;
+}
+
+ .content-area {
+	float: none; 
+	margin-right: 0; 
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+/* header */
+.main-navigation a {
+	color: white;
+}
+
+.site-branding .site-title a {
+    color: white;
+}
+
+.site-header-main {
+	display: flex;
+	justify-content: center;
+}
+
+.site-header {
+	display:: flex;
+	justify-content: center;
+	background-color: #081140;
+	padding: 0;
+	border: none;
+}
+
+/*FOOTER*/
+
+footer {
+display: flex;
+justify-content: space-around;
+width: 100%;
+padding: none;
+}
+
+footer ul li{
+list-style-type: none;
+}
+
+/*HOME PAGE*/
+
+.front-page-bg {
+ 	background-image: url(./img/hero-front-page.jpg);
+ 	background-position: top;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+ }
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80vh;
+  text-align: left;
+}
+
+.my-story-hp-container {
+	background-color: #190504;
+	min-height: 50vh;
+}
+
+.my-work-hp-container {
+	background-color: rgba(8, 17, 64, 0.8);
+	min-height: 75vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.fp-my-work-cards {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-bottom: 3em;
+}
+
+.card {
+	max-width: 275px;
+	max-height: 275px;
+}
+
+.solo-card {
+	border: 8px solid blue;
+	border-radius: 5%;
+}
+
+.collab-card {
+	border: 8px solid red;
+	border-radius: 5%;
+}
+
+.play-card {
+	border: 8px solid yellow;
+	border-radius: 5%;
+}
+
+.my-expertise-hp-container {
+	background-color: #190504;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-hp-container {
+	width: 100%;
+	background-color: rgba(8, 17, 64, 0.8);
+	min-height: 40vh;
+}
+
+
+/*ABOUT PAGE*/
+
+.about-page-bg {
+ 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/about-page-bg.jpg);
+ 	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+ }
+
+.hero-about-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 65vh;
+	text-align:center;
+}
+
+.bg-info-about-container {
+	background-color: #190504;
+	min-height: 50vh;
+}
+
+.experience-about-container {
+    background-color: rgba(8, 17, 64, 0.8);
+	min-height: 60vh;
+/*	display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
+}
+
+.aspirations-about-container {
+	background-color: #190504;
+	min-height: 50vh;
+}
+
+
+/*PROJECTS PAGE*/
+
+.projects-page-bg {
+ 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/projects-page-bg.jpg);
+ 	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+ }
+
+.hero-projects-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 65vh;
+	text-align:center;
+}
+
+.solo-projects-container {
+	background-color: #190504;
+	min-height: 50vh;
+}
