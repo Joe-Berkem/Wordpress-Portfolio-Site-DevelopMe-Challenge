@@ -8,19 +8,18 @@
  */
 ?>
 
-<div class="container-fluid solo-projects-container">
+<div class="container-fluid collab-projects-container">
 
-	<?php if (get_field('solo_projects_heading')){  ?>
-		    <h2 class="light-blue-text section-top-padding bottom-padding"> <?php the_field('solo_projects_heading')?> </h2>
+	<?php if (get_field('collab_projects_heading')){  ?>
+		    <h2 class="light-red-text section-top-padding bottom-padding"> <?php the_field('collab_projects_heading')?> </h2>
 	<?php } ?> 
 
-
-	<div class="solo-projects-cards-row">
+	<div class="collab-projects-cards-row">
 
 	<?php
 
 	$query_solo = array(
-			'category_name' => 'solo',
+			'category_name' => 'collab',
 			'post_type' => 'post',
 			'posts_per_page' => 3,
 			'orderby' => 'rand'
@@ -32,7 +31,7 @@
 		
 
 				<?php if (get_field('image')){ 
-				    echo '<img class="card solo-card" src="'. get_field('image') . '"/>' ?> 
+				    echo '<img class="card collab-card" src="'. get_field('image') . '"/>' ?> 
 				<?php } ?> 
 
 		
@@ -40,10 +39,11 @@
 		<!-- // End the loop -->
 		<?php endwhile;
 		wp_reset_query(); ?>
+
 	</div>
 
-	<?php if (get_field('solo_projects_button_text')){  ?>
-		    <button class="button-light-blue centered-button button-bottom-margin"><?php the_field('solo_projects_button_text')?></button>
+	<?php if (get_field('collab_projects_button_text')){  ?>
+		    <button class="button-light-red centered-button button-bottom-margin"><?php the_field('collab_projects_button_text')?></button>
 	<?php } ?> 
 	
 </div>

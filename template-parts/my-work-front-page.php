@@ -12,8 +12,25 @@
 
 	<?php 
 	if (get_field('my_work_heading')){  ?>
-		    <h2> <?php the_field('my_work_heading')?> </h2>
+		    <h2 class="section-top-padding"> <?php the_field('my_work_heading')?> </h2>
 	<?php } ?>
+
+	<div class="container fp-my-work-categories">
+
+		<?php if (get_field('category1_name')){  ?>
+				<h3 class="light-blue-text"> <?php the_field('category1_name')?> </h3>
+		<?php } ?> 
+
+		<?php if (get_field('category2_name')){  ?>
+				<h3 class="light-red-text"> <?php the_field('category2_name')?> </h3>
+		<?php } ?> 
+
+		<?php if (get_field('category3_name')){  ?>
+				<h3 class="yellow-text"> <?php the_field('category3_name')?> </h3>
+		<?php } ?>
+
+	</div>
+
 
 	<div class="container fp-my-work-cards">
 
@@ -23,26 +40,25 @@
 	$query_solo = array(
 			'category_name' => 'solo',
 			'post_type' => 'post',
-			'posts_per_page' => -1,
+			'posts_per_page' => 1,
 			'orderby' => 'rand'
 		);
 
 	$result = new WP_Query( $query_solo );
 
 	while ( $result->have_posts() ) : $result->the_post(); ?>
-		
-
+		 
 				<?php if (get_field('image')){ 
 				    echo '<img class="card solo-card" src="'. get_field('image') . '"/>' ?> 
 				<?php } ?> 
-
-		
 
 		<!-- // End the loop -->
 		<?php endwhile;
 		wp_reset_query(); ?>
 
+	
 	<!-- collab card -->
+
 	<?php
 
 	$query_collab = array(
@@ -56,6 +72,9 @@
 
 	while ( $result->have_posts() ) : $result->the_post(); ?>
 			
+				<?php if (get_field('category2_name')){  ?>
+					    <h3> <?php the_field('category2_name')?> </h3>
+				<?php } ?> 
 
 				<?php if (get_field('image')){ 
 				    echo '<img class="card collab-card" src="'. get_field('image') . '"/>' ?> 
@@ -67,7 +86,9 @@
 		<?php endwhile;
 		wp_reset_query(); ?>
 
-	<!-- Play card -->
+	
+	<!-- Play card --> 
+
 	<?php
 
 	$query_play = array(

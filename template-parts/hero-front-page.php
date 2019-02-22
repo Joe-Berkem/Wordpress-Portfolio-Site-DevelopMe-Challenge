@@ -12,7 +12,7 @@
 	<div class="container">
 
     	<?php if (get_field('hero_name')){  ?>
-		    <h1 class="display-4"> <?php the_field('hero_name')?> </h1>
+		    <h1 class="name-text"> <?php the_field('hero_name')?> </h1>
 		<?php } ?> 
 
 		<?php if (get_field('hero_focus1')){  ?>

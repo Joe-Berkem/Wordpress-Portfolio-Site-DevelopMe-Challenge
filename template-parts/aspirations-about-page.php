@@ -15,7 +15,7 @@
 	<?php } ?> 
 
 	<?php if (get_field('aspirations_summary')){  ?>
-		    <p> <?php the_field('aspirations_summary')?> </p>
+		    <p class="full-width-text"> <?php the_field('aspirations_summary')?> </p>
 	<?php } ?> 
 
 </div>

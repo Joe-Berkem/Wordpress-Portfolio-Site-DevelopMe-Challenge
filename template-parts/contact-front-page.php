@@ -11,15 +11,15 @@
 <div class="container-fluid contact-hp-container">
 
 	<?php if (get_field('contact_hp_heading')){  ?>
-		    <h2> <?php the_field('contact_hp_heading')?> </h1>
+		    <h2 class="section-top-padding"> <?php the_field('contact_hp_heading')?> </h1>
 	<?php } ?> 
 
 	<?php if (get_field('contact_hp_summary')){  ?>
-		    <p> <?php the_field('contact_hp_summary')?> </p>
+		    <p class="full-width-text"> <?php the_field('contact_hp_summary')?> </p>
 	<?php } ?> 
 
 	<?php if (get_field('contact_hp_button_text')){  ?>
-		    <button><?php the_field('contact_hp_button_text')?></button>
+		    <button class="button-light-blue button-bottom-margin"><?php the_field('contact_hp_button_text')?></button>
 	<?php } ?> 
 	
 </div>

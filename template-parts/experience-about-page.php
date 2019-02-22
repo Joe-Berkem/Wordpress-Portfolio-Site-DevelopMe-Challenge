@@ -21,7 +21,7 @@
 			<?php } ?> 
 
 			<?php if (get_field('field1_summary')){  ?>
-				    <p> <?php the_field('field1_summary')?> </p>
+				    <p class="full-width-text"> <?php the_field('field1_summary')?> </p>
 			<?php } ?> 
 		</div>
 
@@ -31,7 +31,7 @@
 			<?php } ?> 
 
 			<?php if (get_field('field2_summary')){  ?>
-				    <p> <?php the_field('field2_summary')?> </p>
+				    <p class="full-width-text"> <?php the_field('field2_summary')?> </p>
 			<?php } ?> 
 		</div>
 
@@ -41,7 +41,7 @@
 			<?php } ?> 
 
 			<?php if (get_field('field3_summary')){  ?>
-				    <p> <?php the_field('field3_summary')?> </p>
+				    <p class="full-width-text"> <?php the_field('field3_summary')?> </p>
 			<?php } ?> 
 		</div>
 	</div>	

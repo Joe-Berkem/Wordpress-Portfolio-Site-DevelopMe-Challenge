@@ -11,7 +11,7 @@
 <div class="container-fluid my-story-hp-container">
 
 	<?php if (get_field('my story heading')){  ?>
-		    <h2> <?php the_field('my story heading')?> </h2>
+		    <h2 class="section-top-padding"> <?php the_field('my story heading')?> </h2>
 	<?php } ?> 
 
 	<?php if (get_field('my_story_summary')){  ?>
@@ -19,7 +19,7 @@
 	<?php } ?> 
 
 	<?php if (get_field('my_story_button_text')){  ?>
-		    <button><?php the_field('my_story_button_text')?></button>
+		    <button class="button-light-red button-bottom-margin"><?php the_field('my_story_button_text')?></button>
 	<?php } ?> 
 	
 </div>
